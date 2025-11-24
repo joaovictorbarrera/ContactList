@@ -1,0 +1,201 @@
+###Contact 1
+
+POST http://localhost:4000/contacts
+Content-Type: application/json
+
+{
+  "name": "Lucas Moreno",
+  "email": "lucas.moreno@example.com",
+  "phone": "415 392 7712"
+}
+
+###Contact 2
+
+POST http://localhost:4000/contacts
+Content-Type: application/json
+
+{
+  "name": "Ariana Patel",
+  "email": "ariana.patel@example.com",
+  "phone": "347 882 1164"
+}
+
+###Contact 3
+POST http://localhost:4000/contacts
+Content-Type: application/json
+
+{
+  "name": "Michael Turner",
+  "email": "mturner@example.com",
+  "phone": "626 510 9043"
+}
+
+###Contact 4
+POST http://localhost:4000/contacts
+Content-Type: application/json
+
+{
+  "name": "Brianna Chen",
+  "email": "brianna.chen@example.com",
+  "phone": "702 441 9983"
+}
+
+###Contact 5
+POST http://localhost:4000/contacts
+Content-Type: application/json
+
+{
+  "name": "Diego Alvarez",
+  "email": "diego.alvarez@example.com",
+  "phone": "213 820 1132"
+}
+
+###Contact 6
+POST http://localhost:4000/contacts
+Content-Type: application/json
+
+{
+  "name": "Sophia Nguyen",
+  "email": "sophia.nguyen@example.com",
+  "phone": "503 773 2214"
+}
+
+###Contact 7
+POST http://localhost:4000/contacts
+Content-Type: application/json
+
+{
+  "name": "Ryan Kim",
+  "email": "ryan.kim@example.com",
+  "phone": "801 662 1987"
+}
+
+###Contact 8
+POST http://localhost:4000/contacts
+Content-Type: application/json
+
+{
+  "name": "Elena Martinez",
+  "email": "elena.martinez@example.com",
+  "phone": "305 912 4478"
+}
+
+###Contact 9
+POST http://localhost:4000/contacts
+Content-Type: application/json
+
+{
+  "name": "Joseph Parker",
+  "email": "joseph.parker@example.com",
+  "phone": "718 550 2994"
+}
+
+###Contact 10
+POST http://localhost:4000/contacts
+Content-Type: application/json
+
+{
+  "name": "Kayla Rivers",
+  "email": "kayla.rivers@example.com",
+  "phone": "909 441 0038"
+}
+
+###Contact 11
+POST http://localhost:4000/contacts
+Content-Type: application/json
+
+{
+  "name": "Ethan Cole",
+  "email": "ethan.cole@example.com",
+  "phone": "970 228 5096"
+}
+
+###Contact 12
+POST http://localhost:4000/contacts
+Content-Type: application/json
+
+{
+  "name": "Maya Singh",
+  "email": "maya.singh@example.com",
+  "phone": "612 949 7001"
+}
+
+###Contact 13
+POST http://localhost:4000/contacts
+Content-Type: application/json
+
+{
+  "name": "Noah Williams",
+  "email": "noah.williams@example.com",
+  "phone": "480 335 8720"
+}
+
+###Contact 14
+POST http://localhost:4000/contacts
+Content-Type: application/json
+
+{
+  "name": "Gabriella Russo",
+  "email": "gabriella.russo@example.com",
+  "phone": "617 330 9148"
+}
+
+###Contact 15
+POST http://localhost:4000/contacts
+Content-Type: application/json
+
+{
+  "name": "Julian Foster",
+  "email": "julian.foster@example.com",
+  "phone": "214 908 4461"
+}
+
+###Contact 16
+POST http://localhost:4000/contacts
+Content-Type: application/json
+
+{
+  "name": "Valerie Cruz",
+  "email": "valerie.cruz@example.com",
+  "phone": "720 513 8229"
+}
+
+###Contact 17
+POST http://localhost:4000/contacts
+Content-Type: application/json
+
+{
+  "name": "Sebastian Lee",
+  "email": "sebastian.lee@example.com",
+  "phone": "832 981 2045"
+}
+
+###Contact 18
+POST http://localhost:4000/contacts
+Content-Type: application/json
+
+{
+  "name": "Hannah Brooks",
+  "email": "hannah.brooks@example.com",
+  "phone": "760 231 7744"
+}
+
+###Contact 19
+POST http://localhost:4000/contacts
+Content-Type: application/json
+
+{
+  "name": "Omar Khalid",
+  "email": "omar.khalid@example.com",
+  "phone": "646 882 3175"
+}
+
+###Contact 20
+POST http://localhost:4000/contacts
+Content-Type: application/json
+
+{
+  "name": "Zoe Thompson",
+  "email": "zoe.thompson@example.com",
+  "phone": "502 421 1189"
+}

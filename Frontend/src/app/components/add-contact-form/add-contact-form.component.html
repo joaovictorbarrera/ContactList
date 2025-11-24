@@ -1,0 +1,21 @@
+<section class="add-contact-container">
+  <div class="add-contact-form">
+    <h3>New Contact</h3>
+    <div class="form-row">
+      <label for="acName">Name</label>
+      <input id="acName" type="text" [(ngModel)]="contact.name" placeholder="Full name" />
+    </div>
+    <div class="form-row">
+      <label for="acPhone">Phone</label>
+      <input id="acPhone" type="text" [(ngModel)]="contact.phone" placeholder="Phone number" />
+    </div>
+    <div class="form-row">
+      <label for="acEmail">Email (optional)</label>
+      <input id="acEmail" type="email" [(ngModel)]="contact.email" placeholder="Email address" />
+    </div>
+    <div class="form-actions">
+      <button class="btn-cancel" type="button" (click)="onCancel()">Cancel</button>
+      <button class="btn-save" type="button" (click)="onSave()" [disabled]="!contact.name.trim() || !contact.phone.trim()">Save</button>
+    </div>
+  </div>
+</section>

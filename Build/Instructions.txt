@@ -1,0 +1,11 @@
+Place an application.properties file within the same directory as the ContactList.jar program.
+
+In the properties, please include:
+
+// Default is 4000
+server.port={PORT YOUR WOULD LIKE TO USE} 
+
+// DATASOURCE CONFIG
+spring.datasource.url={YOUR DATABASE URL}
+spring.datasource.username={YOUR DATABASE USER NAME}
+spring.datasource.password={YOUR DATABASE USER PASSWORD}

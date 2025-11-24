@@ -1,0 +1,146 @@
+:host, .contact-detail-container {
+  height: 100%;
+}
+
+.contact-detail-container {
+  padding: 0.75rem 1.25rem;
+}
+
+.detail-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.25rem 0.25rem 0.5rem 0.25rem;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+.detail-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.detail-card {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 0.5rem 0;
+  margin-top: 2rem;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.detail-avatar {
+  width: 6rem;
+  height: 6rem;
+  min-width: 6rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  user-select: none;
+}
+
+.detail-avatar.favorite {
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+}
+
+.detail-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.detail-name {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.detail-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  width: 100%;
+  max-width: 360px;
+}
+
+.field-label {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.65);
+}
+
+.field-value {
+  color: #ffffff;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color 0.12s ease-in-out;
+}
+
+.field-value:hover {
+  color: #cfe8ff;
+}
+
+.detail-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+/* Icon button styles (copied from phone component) so back/pencil/star look consistent */
+/* .icon-button moved to global styles.scss */
+
+.detail-action-btn {
+  padding: 0.45rem 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: rgba(255,255,255,0.06);
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+
+    .icon-button {
+        padding: 0;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    &:hover {
+        background-color: rgba(255,255,255,0.1);
+    }
+
+    &.save {
+        background-color: #28a745 !important;
+        color: #ffffff !important;
+    }
+}
+
+.edit-fields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.field-input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  background-color: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 0.5rem;
+  color: #ffffff;
+  font-family: inherit;
+}

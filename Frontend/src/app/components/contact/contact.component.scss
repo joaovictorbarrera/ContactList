@@ -1,0 +1,56 @@
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  &:active {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  &.deletion-mode {
+    cursor: pointer;
+  }
+}
+
+.contact-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  flex-shrink: 0;
+
+  &.favorite {
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  }
+
+  &.selected {
+    background: linear-gradient(135deg, #ff6b9d 0%, #c44569 100%);
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.contact-name {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+  line-height: 1.4;
+}
+

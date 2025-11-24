@@ -1,0 +1,79 @@
+<section class="contact-detail-container">
+  <div class="detail-header">
+    <button class="icon-button" type="button" aria-label="Back" (click)="onClose()">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </button>
+    <h2 class="detail-title">Contact</h2>
+    <div class="detail-actions">
+      <button class="detail-action-btn icon-button" type="button" aria-label="Edit contact" [class.save]="editing" (click)="onEditToggle()">
+        @if (editing) {
+          <!-- Check icon (save) -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        } @else {
+          <!-- Pencil icon -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 20h9"></path>
+            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"></path>
+          </svg>
+        }
+      </button>
+      <button class="detail-action-btn icon-button" type="button" aria-label="Toggle favorite" (click)="toggleFavorite()">
+        @if (contact()?.favorite) {
+          <!-- filled star -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="yellow" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.788 1.402 8.168L12 18.896l-7.336 3.87 1.402-8.168L.132 9.21l8.2-1.192z" />
+          </svg>
+        } @else {
+          <!-- outline star -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+          </svg>
+        }
+      </button>
+      <button class="detail-action-btn icon-button" type="button" aria-label="Delete contact" (click)="onDelete()" title="Delete contact">
+        <!-- Trash icon -->
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="3 6 5 6 21 6"></polyline>
+          <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="detail-card">
+    <div class="detail-avatar" [class.favorite]="contact()?.favorite">{{ getInitial() }}</div>
+    <div class="detail-info">
+      @if (!editing) {
+        <h3 class="detail-name">{{ contact()?.name }}</h3>
+        <div class="detail-field">
+          <span class="field-label">Phone</span>
+          <a class="field-value" href="tel:{{ contact()?.phone }}">{{ contact()?.phone }}</a>
+        </div>
+        @if (contact()?.email) {
+          <div class="detail-field">
+            <span class="field-label">Email</span>
+            <a class="field-value" href="mailto:{{ contact()?.email }}">{{ contact()?.email }}</a>
+          </div>
+        }
+      } @else {
+        <div class="edit-fields">
+          <label class="detail-field">
+            <span class="field-label">Name</span>
+            <input class="field-input" type="text" [(ngModel)]="newContactData.name" (keydown.enter)="$event.preventDefault(); onEditToggle()" />
+          </label>
+          <label class="detail-field">
+            <span class="field-label">Phone</span>
+            <input class="field-input" type="text" [(ngModel)]="newContactData.phone" (keydown.enter)="$event.preventDefault(); onEditToggle()" />
+          </label>
+          <label class="detail-field">
+            <span class="field-label">Email</span>
+            <input class="field-input" type="email" [(ngModel)]="newContactData.email" (keydown.enter)="$event.preventDefault(); onEditToggle()" />
+          </label>
+        </div>
+      }
+    </div>
+  </div>
+</section>
